@@ -1,0 +1,366 @@
+/* Général */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+    list-style: none;
+}
+
+:root {
+    --bg-black: #f2f2fc;
+    --bg-orange: #4a4a4a;
+    --text-black-400: #4a4a4a;
+    --text-black-600: #7a7a7a;
+    --skin-color: #ec6608;
+}
+
+.btn {
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--skin-color);
+    border-radius: 40px;
+    border: none;
+    font-weight: 600;
+}
+button:hover {
+    color: var(--skin-color);
+    background-color: white;
+    border: 2px solid var(--skin-color);
+}
+
+.padd60 {
+    padding : 60px;
+}
+
+
+/* Nav */
+header{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url(images/bg.jpg);
+}
+
+
+.navbar{
+    position: absolute; /* passe au dessus du background */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    background-color: white;
+    opacity: 75%;
+    
+
+}
+
+.navbar img{
+    width: 52%;
+}
+
+
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 20px;
+}
+
+.navbar .nav-links ul li a.active{
+    color: red; /* marche pô */
+}
+
+.navbar .nav-links ul li a {
+    color: var(--text-black-600);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-title {
+    display: flex;
+    position: relative;
+    color: white;
+    padding: 20% 0 0 120px
+}
+
+.header-title h1{
+    font-size: 47px;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right : 100px;
+}
+
+.header-title p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right : 100px;
+}
+
+.header-title button {
+    margin: 35px 0 0 40px
+}
+
+/* Notre mission */
+
+.mission-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission h3{
+    padding-bottom : 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--skin-color)
+}
+
+.mission h2{
+    font-size: 34px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.mission h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.mission p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-black-600);
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.mission-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-content i {
+    font-size: 43px;
+     margin: auto;
+    /* text-align: center;  */
+    /* position: absolute; */
+    color: var(--skin-color);
+    /* padding: 13px; */
+    padding-left: 39%;  /* triche car j'arrive pas a centrer */
+    
+}
+.mission-one, .mission-two, .mission-three, .mission-four {
+    padding: 48px;
+    margin-left: 28px;
+    margin-right: 10px;
+    margin-top: 33px;
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+    border-radius: 37% 10% ;
+}
+
+/* Farmer */
+
+.farmer {
+    background-color: rgb(250, 230, 214);
+    display: flex;
+}
+
+.farmer-left {
+    width: 50%;
+}
+
+.farmer-right {
+    padding-left: 45px;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+}
+
+.farmer h2{
+    font-size: 34px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.farmer h3{
+    padding-bottom : 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--skin-color)
+}
+
+.farmer h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    padding: 10px;
+}
+
+.farmer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-black-600);
+    line-height: 25px;
+    padding-left: 35px;
+    
+}
+
+.farmer .farmer-left img {
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 7px;
+}
+
+.farmer .farmer-right img {
+    border-radius: 68% 17% 53%;
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+}
+
+/* Coop */
+
+.coop-left {
+    width: 22%;
+}
+
+.coop-right {
+    padding-left: 38px;
+}
+
+.coop h2{
+    font-size: 34px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.coop h3{
+    padding-bottom : 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--skin-color)
+}
+
+.coop h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    padding: 10px;
+}
+
+.coop p{
+    color: var(--text-black-600);
+    line-height: 25px;
+    padding-left: 35px;
+}
+
+.coop {
+    background-color: white;
+    display: flex;
+}
+
+.coop .coop-left img{
+    border-radius: 10% 10% 53% 10%;
+    height: 380px;
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+}
+
+.coop .coop-right img {
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 7px;
+}
+
+.coop-right-text {
+    display: flex;
+}
+
+.coop-right-left {
+    width: 45%;
+}
+
+.coop-right-right {
+    width: 45%;
+}
+
+/* Visit */
+
+.visit {
+    background-color: rgb(250, 230, 214);
+    /* display: flex; */
+}
+
+.visit h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.divider {
+    width: 50px;
+    color: var(--skin-color);
+    border: solid thin;
+    margin: auto;
+    
+}
+
+.ctn {
+    display: flex;
+}
+
+.ctn-2 {
+    margin: 1%;
+    width: 50%;
+}
+
+.visit .ctn .ctn-2 .visit-card {
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+    border-radius: 50px;
+    width: 98%;
+    padding: 30px 45px;
+    max-width: 550px;
+}
+
+.visit-card i{
+    color: var(--skin-color);
+    font-size: 46px;
+    font-weight: 900;
+    padding: 2px;
+}
+
+.visit-card h3{
+    color: #000000;
+    padding: 7px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.visit-card p{
+    color: var(--text-black-600);
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
